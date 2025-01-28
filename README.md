@@ -3,4 +3,4 @@
 
 ![Image](screenshot/HomeScreen.png)
 
-![Image](screenshot/Navigation_home_DogScreen.png)
+![Image](screenshot/DogScreen.png)
