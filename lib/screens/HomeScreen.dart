@@ -77,6 +77,31 @@
             ),
           ],
         ),
+
+        drawer: Drawer(
+            child:ListView(
+              // Important: Remove any padding from the ListView.
+                padding: EdgeInsets.only(top: 40),
+                children: [
+                  ListTile(
+                    title: const Text('Home Screen'),
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => HomeScreen(title: 'Home')),
+                      );
+                    },
+                  ),
+                  ListTile(
+                    title: const Text('Dog Screen'),
+                    onTap: () {
+                      Navigator.of(context).push(
+                        MaterialPageRoute(builder: (context) => DogScreen(title: 'Dog')),
+                      );
+                    },
+                  ),
+                ]
+            )
+        ),
         body: Center(
             child: isLoading
                 ? CircularProgressIndicator() // Show loading spinner when fetching image
