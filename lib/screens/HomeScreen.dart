@@ -87,7 +87,9 @@
                     title: const Text('Home Screen'),
                     onTap: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => HomeScreen(title: 'Home')),
+                        // MaterialPageRoute(builder: (context) => HomeScreen(title: 'Home')),
+
+                          MaterialPageRoute(builder: (context) => HomeScreen(title: 'Home Screen'))
                       );
                     },
                   ),
@@ -95,7 +97,9 @@
                     title: const Text('Dog Screen'),
                     onTap: () {
                       Navigator.of(context).push(
-                        MaterialPageRoute(builder: (context) => DogScreen(title: 'Dog')),
+                        // MaterialPageRoute(builder: (context) => DogScreen(title: 'Dog')),
+
+                        MaterialPageRoute(builder: (context) => DogScreen(title: 'Dog Screen')),
                       );
                     },
                   ),
